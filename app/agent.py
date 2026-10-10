@@ -5,7 +5,7 @@ from app.state import AgentState
 from app.planner import Planner
 from app.executor import Executor
 from app.reporting.report_generator import ReportGenerator
-from app.tools import WebSearchTool, WebpageFetcherTool, CalculatorTool, FailureSimulatorTool
+from app.tools import WebSearchTool, WebpageFetcherTool, CalculatorTool, FailureSimulatorTool, WikipediaTool
 from app.utils.logging_utils import log_event
 
 class ResearchAgent:
@@ -17,6 +17,7 @@ class ResearchAgent:
             "web_search": WebSearchTool(),
             "webpage_fetcher": WebpageFetcherTool(),
             "calculator": CalculatorTool(),
+            "wikipedia": WikipediaTool(),
         }
         
         if demo_failure:

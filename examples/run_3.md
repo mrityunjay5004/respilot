@@ -5,7 +5,7 @@
 
 **Transcript:**
 ```
-Starting ResearchPilot with goal: 'Compare OpenAI and Google DeepMind based on their latest publicly available AI developments, and calculate the percentage difference between 175B and 1.76T parameters.'
+Starting ResPilot with goal: 'Compare OpenAI and Google DeepMind based on their latest publicly available AI developments, and calculate the percentage difference between 175B and 1.76T parameters.'
 2026-10-08 17:25:00 | INFO | AGENT_START | STARTED
 2026-10-08 17:25:01 | INFO | PLAN_CREATED | IN_PROGRESS
 

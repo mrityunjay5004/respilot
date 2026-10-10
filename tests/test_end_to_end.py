@@ -54,12 +54,15 @@ def test_planner(mock_call_llm_json):
     assert len(plan.steps) == 1
     assert plan.steps[0].tool == "web_search"
 
+@patch("app.executor.call_llm")
 @patch("app.executor.call_llm_json")
 @patch("app.tools.web_search.WebSearchTool.run")
-def test_executor_retry_and_recovery(mock_web_search, mock_llm_json):
+def test_executor_retry_and_recovery(mock_web_search, mock_llm_json, mock_call_llm):
     from app.executor import Executor
     
     mock_llm_json.return_value = {"query": "test"}
+    mock_call_llm.return_value = "YES"
+
     
     # Simulate a failure on the first run, success on the second
     mock_web_search.side_effect = [

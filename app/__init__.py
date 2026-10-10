@@ -1,1 +1,1 @@
-# ResearchPilot package
+# ResPilot package

@@ -1,7 +1,7 @@
-# Design Write-Up: ResearchPilot
+# Design Write-Up: ResPilot
 
 ### Design Decisions
-ResearchPilot implements a modular, state-driven agent architecture. Instead of relying on a monolithic ReAct loop, it uses an explicit **Plan-and-Execute** workflow. This fulfills the requirement for a visible planning trace and guarantees predictable execution. The LLM acts as the orchestrator (planning, tool argument generation, synthesis), while Python handles the deterministic control flow (retries, validation, error handling).
+ResPilot implements a modular, state-driven agent architecture. Instead of relying on a monolithic ReAct loop, it uses an explicit **Plan-and-Execute** workflow. This fulfills the requirement for a visible planning trace and guarantees predictable execution. The LLM acts as the orchestrator (planning, tool argument generation, synthesis), while Python handles the deterministic control flow (retries, validation, error handling).
 
 The architecture separates concerns:
 - **Planner:** Maps goals to a structured JSON plan.

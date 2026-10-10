@@ -5,7 +5,7 @@
 
 **Transcript:**
 ```
-Starting ResearchPilot with goal: 'Analyze NVIDIA's competitive position'
+Starting ResPilot with goal: 'Analyze NVIDIA's competitive position'
 WARNING: Demo failure mode enabled. The agent will intentionally fail a tool call and recover.
 2026-10-08 17:20:00 | INFO | AGENT_START | STARTED
 2026-10-08 17:20:01 | INFO | PLAN_CREATED | IN_PROGRESS

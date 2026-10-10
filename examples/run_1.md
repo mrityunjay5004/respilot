@@ -5,7 +5,7 @@
 
 **Transcript:**
 ```
-Starting ResearchPilot with goal: 'Analyze NVIDIA's competitive position in the AI accelerator market and give me a concise competitive landscape report.'
+Starting ResPilot with goal: 'Analyze NVIDIA's competitive position in the AI accelerator market and give me a concise competitive landscape report.'
 2026-10-08 17:15:00 | INFO | AGENT_START | STARTED
 2026-10-08 17:15:00 | INFO | PLAN_CREATED | IN_PROGRESS
 
